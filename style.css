@@ -1,0 +1,44 @@
+
+body {
+    background-color: #8e24aa; /* A slightly more refined purple */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Remove bullets and make the list horizontal */
+nav ul {
+    list-style-type: none; /* Removes the dots */
+    margin: 0;
+    padding: 0;
+    display: flex; /* This is the "magic" that aligns them in a row */
+    justify-content: center; /* Puts the menu in the middle */
+}
+
+nav ul li {
+    margin: 0 20px; /* Gives space between the links */
+}
+
+nav ul li a {
+    color: white; /* Makes the text white against the purple */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;
+}
+
+header {
+    padding: 50px 20px; /* Adds space at the top and bottom */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem; /* Makes the school name large and bold */
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.9; /* Slightly softens the color */
+}
+
+
