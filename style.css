@@ -1,44 +1,189 @@
-
-body {
-    background-color: #8e24aa; /* A slightly more refined purple */
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-/* Remove bullets and make the list horizontal */
-nav ul {
-    list-style-type: none; /* Removes the dots */
+ *{
+    box-sizing: border-box;
+ }
+body{
     margin: 0;
     padding: 0;
-    display: flex; /* This is the "magic" that aligns them in a row */
-    justify-content: center; /* Puts the menu in the middle */
+    color: white;
+    height:100vh;
+    display: flex;
+
 }
 
-nav ul li {
-    margin: 0 20px; /* Gives space between the links */
+nav{
+    position: fixed;
+    top: 0px;
+    left:0;
+    right: 0px;
+    width: 100%; 
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    z-index: 1;
+}  
+nav > a{
+    text-decoration: none;
+    font-size: 32px;
+    color: blue;
+    margin-right: 0%;
 }
-
-nav ul li a {
-    color: white; /* Makes the text white against the purple */
-    text-decoration: none; /* Removes the underline */
-    font-weight: bold;
+nav ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    margin-left: 0px;
 }
-
-header {
-    padding: 50px 20px; /* Adds space at the top and bottom */
+nav ul a{
+    color: bisque;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 15px;
+} 
+nav > ul > li > a:hover {
+    background: rgb(165, 112, 141);
+    color: whitesmoke;
+}
+nav .a :active{
+    background: rgb(165, 112, 141);
+    color: whitesmoke;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+#background{
+    background-image: url("Untitled\ design.png");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: -1;
+}
+.backgroundteachers{
+    background-image: url("backteachers3.jpg");
+    opacity: 0.3;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+img{
+    width: 200px;
+    position: relative;
+    height: auto;
+    border-radius: 8px;
+    z-index: -1;
+}
+.teacherscontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.teacher{
+    border: 10px solid palevioletred;
+    align-items: center;
+    width: fit-content;
     text-align: center;
+    height: auto;
+    padding: 5px; 
 }
-
-h1 {
-    font-size: 3rem; /* Makes the school name large and bold */
-    margin-bottom: 10px;
+.hoi-img{
+    width: 300px;
+    height: 450px;
 }
+#hoi{
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 70px;
+}  
+#deputy{
+    width: 390px;
+    margin-left: 650px;
+    margin-top: -400px;
 
-.welcome {
-    font-style: italic;
-    font-size: 1.2rem;
-    opacity: 0.9; /* Slightly softens the color */
+} 
+.deputy-img{
+    height: 270px;
+    width: 210px;
+    margin:5px;
 }
-
-
+#teacher3{
+    margin-left: 200px;
+}
+#teacher4{
+    margin-left: 450px;
+    margin-top: -200px;
+}
+#teacher5{
+    margin-left: 700px;
+    margin-top: -200px;
+}
+#teacher6{
+    margin-left: 950px;
+    margin-top: -200px;
+}
+#teacher7{
+    margin-left: 950px;
+    margin-top: 10px;
+}
+#teacher8{
+    margin-left: 700px;
+    margin-top: -200px;
+}
+#teacher9{
+    margin-left: 450px;
+    margin-top: -500px;
+}
+#teacher10{
+    margin-left: 200px;
+    margin-top: -500px;
+}
+.contact-info{
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 20px;
+    color:  whitesmoke;
+}
+.background-gallery{
+    background-image: url("backgroundgallery.jpg");
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    top: 0;
+    left: 0;
+}
+.background-contact{
+    background-image: url("backgroundcontact2.jpg");
+    opacity: 0.9;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+}
+.contact-info h2{
+    font-size: 50px;
+}
+.contact-info p{
+    font-size: 20px;
+}
